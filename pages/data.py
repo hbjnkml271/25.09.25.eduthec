@@ -1,3 +1,6 @@
+import numpy as np
+import random
+import streamlit as st
 years = list(range(2000, 2026))
 months = list(range(1, 13))
 st.markdown('---')
@@ -35,7 +38,6 @@ if selected_values:
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import streamlit as st
 import numpy as np
 import datetime
 import random
@@ -49,7 +51,7 @@ df = pd.DataFrame(data)
 
 # 한글 폰트 설정
 from matplotlib import font_manager, rc
-font_path = '../fonts/NanumGothic-Regular.ttf'
+font_path = '/workspaces/25.09.25.eduthec/fonts/NanumGothic-Regular.ttf'
 font_manager.fontManager.addfont(font_path)
 rc('font', family='NanumGothic')
 
