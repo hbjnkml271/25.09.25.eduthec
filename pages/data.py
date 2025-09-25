@@ -32,7 +32,7 @@ selected_values = [all_monthly_kospi[(y, m)] for (y, m) in selected_period]
 if selected_values:
 	avg_kospi = np.mean(selected_values)
 	st.info(f"{start_year}년 {start_month}월 ~ {end_year}년 {end_month}월 코스피 평균: {avg_kospi:.2f}")
-# 간단한 데이터 그래프 생성 예시
+import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
